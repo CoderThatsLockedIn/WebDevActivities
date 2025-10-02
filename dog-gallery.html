@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: green;
+            height: 100%;
+            width: 100vw;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 15px;
+            padding: 15px;
+        }
+        .dog {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 1px 1px 1px 0;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .dog:hover {
+            border: 2px solid black;
+            box-shadow: 4px 4px 15px 0;
+        }
+        @media ((max-width: 1280px) and (min-width: 768px)) {
+            .container {
+                display: grid;
+                background-color: green;
+                height: 100%;
+                width: 100%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                gap: 15px;
+                padding: 15px;
+            }
+        }
+        @media (max-width: 767px) {
+            .container {
+                display: grid;
+                background-color: green;
+                height: 100%;
+                width: 100%;
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dog"><img
+                src="http://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*">
+        </div>
+        <div class="dog"><img src="https://i.pinimg.com/736x/7e/ef/98/7eef98fde958fca287eeabd2eefef6f7.jpg" alt=""></div>
+        <div class="dog"><img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Golden-Retriever.jpg?v=1645179525" alt=""></div>
+        <div class="dog"><img src="https://images.theconversation.com/files/625049/original/file-20241010-15-95v3ha.jpg?ixlib=rb-4.1.0&rect=140%2C0%2C2305%2C1536&q=20&auto=format&w=768&h=512&fit=crop&dpr=2&usm=12&cs=strip" alt=""></div>
+        <div class="dog"><img src="https://content.dogagingproject.org/wp-content/uploads/2020/11/helena-lopes-S3TPJCOIRoo-unsplash-scaled.jpg" alt=""></div>
+        <div class="dog"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf-N5cOX2B9BQ1ci8WK1wTr6JAV8O-1-nVeg&s" alt=""></div>
+        <div class="dog"><img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/streams/2013/May/130522/6C7536084-g-hlt-120105-puppy-423p.jpg" alt=""></div>
+        <div class="dog"><img src="https://www.hypropremium.com.au/wp-content/uploads/2020/01/oldest-dog-breeds-1-min.jpg" alt=""></div>
+        <div class="dog"><img src="https://www.dailypaws.com/thmb/B6yWhzGpQZsg3kxMzLn-hvGIF7M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/siberian-husky-100800827-2000-9449ca147e0e4b819bce5189c2411188.jpg" alt=""></div>
+    </div>
+</body>
+
+</html>
