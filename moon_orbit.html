@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: black;
+        }
+        .system  {
+            top: 100px;
+            margin-top: 350px;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-name: orbit;
+            margin: auto;
+            height: 400px;
+            width: 400px;
+            /* background-color: gray; */
+            position: relative;
+
+        }
+        .earth {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            top: 250px;
+            left: 700px;
+            box-shadow: 0 0 20px blue;
+        }
+        .moon {
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 0 20px white;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            top: 0px;
+            right: 0px;
+        }
+        @keyframes orbit {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "system">
+        <div class = "moon"></div>
+    </div>
+    <div class = "earth"></div>
+</body>
+</html>
